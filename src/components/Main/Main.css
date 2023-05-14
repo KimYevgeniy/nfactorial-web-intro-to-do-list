@@ -1,0 +1,7 @@
+.Main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 64px;
+}
