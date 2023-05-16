@@ -22,7 +22,12 @@ export default function App() {
 
       <Main />
 
-      <footer className='footer inter500-14'>Made with ❤️ at nFactorial in 2023.</footer>
+      <footer className='footer inter500-14'>
+        <div>Made with ❤️ at nFactorial in 2023.</div>
+        <div className='inter500-14-op'>
+          Credits: icons from <a href="https://icons8.com/">Icons8</a>.
+        </div>
+      </footer>
     </div>
   );
 }

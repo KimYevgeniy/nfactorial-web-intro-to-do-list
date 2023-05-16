@@ -26,8 +26,10 @@ button {
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: calc(100% - 160px);
   height: 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .df {
@@ -63,4 +65,12 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+}
+.inter500-14-op {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  opacity: 0.5;
 }
