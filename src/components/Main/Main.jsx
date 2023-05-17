@@ -27,7 +27,7 @@ export default function Main() {
                     <button onClick={() => setActivePage('Trash')} style={{background: activePage === "Trash" ? "rgba(8, 30, 52, 0.42)" : "rgba(8, 30, 52, 0.1)"}}className='inter500-14'>Trash</button>
                 </div>
 
-                <Modal toDoList={toDoList} setToDoList={setToDoList}/>
+                <Modal toDoList={toDoList} setToDoList={setToDoList} setActivePage={setActivePage}/>
         
             </div>
 

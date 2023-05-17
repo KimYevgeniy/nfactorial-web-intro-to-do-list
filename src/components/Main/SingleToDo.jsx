@@ -55,11 +55,10 @@ export default function SingleToDo ({ item, toDoList, setToDoList, activePage })
     }
 
     const deleteForever = (id) => {
-        // const itemToToDo = toDoList.find((item) => item.id === id)
         const toDoToDoList = toDoList.filter((item) => item.id !== id)
         setToDoList([...toDoToDoList])
     }
-
+    
     return (
         <>
             <div className='singletodo'> 
