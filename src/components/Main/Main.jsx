@@ -9,11 +9,11 @@ export default function Main() {
     const [activePage, setActivePage] = useState('To Do')
 
     const [toDoList, setToDoList] = useState([
-        {text: 'Do smth', id: uuidv4(), status: 'To Do'},
-        {text: 'Other stuff', id: uuidv4(), status: 'To Do'},
-        {text: 'Trash stuff', id: uuidv4(), status: 'Trash'},
-        {text: 'Done stuff', id: uuidv4(), status: 'Done'},
-        {text: 'Trash stuff', id: uuidv4(), status: 'Trash'}
+        // {text: 'Do smth', id: uuidv4(), status: 'To Do'},
+        // {text: 'Other stuff', id: uuidv4(), status: 'To Do'},
+        // {text: 'Trash stuff', id: uuidv4(), status: 'Trash'},
+        // {text: 'Done stuff', id: uuidv4(), status: 'Done'},
+        // {text: 'Trash stuff', id: uuidv4(), status: 'Trash'}
     ])
 
     const activeList = toDoList.filter((item) => item.status === activePage)
