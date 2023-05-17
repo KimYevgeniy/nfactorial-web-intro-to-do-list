@@ -13,6 +13,15 @@
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
+.list-modal-todo {
+    height: 48px;
+    width: 240px;
+    background-color: rgba(8, 30, 52, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+}
 
 .options {
     display: flex;
@@ -30,4 +39,13 @@
 }
 .icon {
     align-self: center;
+}
+
+.icon-clickable {
+    align-self: center;
+    padding: 10px;
+}
+.singletodo {
+    display: flex;
+    gap: 10px;
 }
