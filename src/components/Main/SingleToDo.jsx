@@ -54,6 +54,12 @@ export default function SingleToDo ({ item, toDoList, setToDoList, activePage })
         }
     }
 
+    const deleteForever = (id) => {
+        // const itemToToDo = toDoList.find((item) => item.id === id)
+        const toDoToDoList = toDoList.filter((item) => item.id !== id)
+        setToDoList([...toDoToDoList])
+    }
+
     return (
         <>
             <div className='singletodo'> 
@@ -78,7 +84,7 @@ export default function SingleToDo ({ item, toDoList, setToDoList, activePage })
                     <div className="list-modal">
                         <div className="overlay">
                             <div className="options">
-                               <div className='options1' onClick={() => changeStatusToTrash(item.id)}>
+                               <div className='options1' onClick={activePage === 'Trash' ? () => deleteForever(item.id) : () => changeStatusToTrash(item.id)}>
                                     <img src={trash} className='icon'/>
                                     <p className='inter500-14'> {changeText()}</p>
                                </div>
